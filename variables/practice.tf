@@ -43,9 +43,9 @@ output "emp_details" {
 
 #Access map, map of map
 output "emp_id_with_performance" {
-  value = var.emp_id_with_performance[id_s]
+  value = var.emp_id_with_performance[1]
 }
 
 output "emp_performance" {
-  value = var.emp_performance[chandrika]
+  value = var.emp_performance["chandrika"]
 }

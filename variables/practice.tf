@@ -40,3 +40,12 @@ variable "emp_id_with_performance" {
 output "emp_details" {
   value = var.emp_details[0]
 }
+
+#Access map, map of map
+output "emp_id_with_performance" {
+  value = var.emp_id_with_performance[id_s]
+}
+
+output "emp_performance" {
+  value = var.emp_performance[chandrika]
+}

@@ -36,6 +36,7 @@ variable "emp_id_with_performance" {
   }
 }
 
+#Access list var, index values
 output "emp_details" {
-  value = var.emp_details
+  value = var.emp_details[0]
 }

@@ -36,6 +36,13 @@ variable "emp_id_with_performance" {
   }
 }
 
+variable "intro" {
+  default = {
+    name = {
+      name_1=chandana
+    }
+  }
+}
 #Access list var, index values
 output "emp_details" {
   value = var.emp_details[0]
@@ -48,4 +55,10 @@ output "emp_id_with_performance" {
 
 output "emp_performance" {
   value = var.emp_performance
+}
+
+#variable in a combination of any other string then it need to be ${}
+
+output "intro" {
+  value = "Intro=${name_1}"
 }

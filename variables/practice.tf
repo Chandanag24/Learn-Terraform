@@ -59,6 +59,6 @@ output "emp_performance" {
 
 #variable in a combination of any other string then it need to be ${}
 
-output "intro" {
-  value = "Intro=${name}"
+output "emp_name_1" {
+  value = "Employee Name=${var.emp_name}"
 }

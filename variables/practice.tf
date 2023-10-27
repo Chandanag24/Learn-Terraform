@@ -36,13 +36,6 @@ variable "emp_id_with_performance" {
   }
 }
 
-variable "intro" {
-  default = {
-    name = {
-      name_1=chandana
-    }
-  }
-}
 #Access list var, index values
 output "emp_details" {
   value = var.emp_details[0]

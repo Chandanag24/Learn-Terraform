@@ -1,9 +1,9 @@
 variable "security_groups" {
-  default = ["sg-0dee954b08055e577"]
+  default = ["sg-02b5746c2dc0c1fad"]
 }
 
 variable "zone_id" {
-  default = "Z0021413JFIQEJP9ZO9Z"
+  default = "Z0243240SL2ZOPCKERO1"
 }
 
 variable "components" {

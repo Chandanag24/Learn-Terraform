@@ -28,3 +28,7 @@ locals {
   app = { for k,v in merge(var.vpc["main"]["subnets"]["app"]): k => v }
   db = { for k,v in merge(var.vpc["main"]["subnets"]["db"]): k => v }
 }
+
+output "all_subnets" {
+  value = merge(local.public, local.db, local.app)
+}

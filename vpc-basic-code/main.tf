@@ -47,3 +47,7 @@ resource "aws_subnet" "db" {
     Name = "db-${count.index + 1}"
   }
 }
+
+#Name = "db-${count.index + 1}"
+#}
+#}
